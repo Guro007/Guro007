@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="infinite-mtavari.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+          <video autoplay loop muted plays-inline class="video">
+            <source src="images/vecteezy_square-polygon-3d-particle-background-loop-animation_3662961.mp4" type="video/mp4">
+          </video>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li><a href="infinite-mtavari.html"><i class="fa-thin fa-camera-movie"></i>Guromovies.ge</a></li>
+                <li><a href="infinite-mtavari.html"><i class="fa-solid fa-table-columns"></i>მთავარი</a></li>
+                <li><a href="infinite-history.html"><i class="fa-solid fa-table-columns"></i>ფილმები</a></li>
+                <li><a href="infinite.html"><i class="fa-solid fa-table-columns"></i>სერიალები</a></li>
+                <li><a href="#"><i class="fa-brands fa-squarespace"></i>ანიმაციები</a></li>
+                <li><a href="#"><i class="fa-solid fa-eject"></i>საბავშვო</a></li>
+                <li><a href="#"><i class="fa-solid fa-server"></i>კოლექცია</a></li>
+                <li><a href="#"><i class="fa-regular fa-id-card"></i>ტელევიზია</a></li>
+                <li><a href="#"><i class="fa-solid fa-comment"></i>დახმარება</a></li>
+                <li><a href="#"><i class="fa-regular fa-id-card"></i>კონტაქტი</a></li>
+                <li class="media">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="label2">
+          <div class="label">
+            <form class="input" data-error="This name is already taken">
+              <label for="name"></label>
+              <input required type="name" id="input" placeholder="სახელი" value="">
+            </form>
+            <form class="input" data-error="This email is already taken">
+              <label for="email"></label>
+              <input required type="email" id="input" placeholder="ელ-ფოსტა" value="">
+            </form> 
+            <form class="input" data-error="Incorrect password">
+              <label for="password"></label>
+              <input required type="password" id="input" placeholder="პაროლი" value="">
+            </form>
+            <div class="btn">
+              <button>რეგისტრაცია</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <h1>Black Adam / შავი ადამი</h1>
+              <img src="images/detective/black.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <h1>Spider-Man / ადამიანი ობობა</h1>
+              <img src="images/detective/spiderman.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <h1>The Knives Out / მუქარა</h1>
+              <img src="images/detective/knives-out-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <h1>Man of Steel / ფოლადის კაცი</h1>
+              <img src="images/detective/maxresdefault.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <h1>Enola Holmes 2 / ენოლა ჰოლმსი 2</h1>
+              <img src="images/detective/enl.jpg" alt="">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      <div class="input">
+        <input type="search" placeholder="search" id="search">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+      <div class="baner">
+        <h1>
+          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          რეკლამისთვის დაგვიკავშირდით: +000 000 000 000
+        </h1>
+      </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+               delay:3000,
+               disableOnInteraction:false,
+               
+            },
+
+            loop: true,
+
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+ 
+    });
+    </script>
+</body>
+</html>
